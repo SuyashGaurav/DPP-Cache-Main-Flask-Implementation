@@ -67,4 +67,4 @@ PATH_TO_INPUT = Datasets/311_dataset.txt  # Path to request dataset
 
 ## Extension
 **Multiple Base Stations**
-The project extends the enhanced DPP algorithm to multiple base stations, leveraging the federated average technique. This extension introduces new dimensions, allowing for the optimization of caching strategies in a federated environment. More details can be found on this GitHub repo.
+The project extends the enhanced DPP algorithm to multiple base stations, leveraging the federated average technique. This extension introduces new dimensions, allowing for the optimization of caching strategies in a federated environment. More details can be found on this [GitHub repo](https://github.com/SuyashGaurav/Federated-Average-Main-Live-Demonstration).
