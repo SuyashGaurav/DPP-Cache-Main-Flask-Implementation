@@ -8,13 +8,23 @@ The primary goal is to maximize the time-averaged cache hit rate. A cache hit oc
 
 This reposiroty contains datasets and files relevant to **DPP-caching algorithm**. We have also made use of GitHub Repository of **LeadCache** Algorithm for experimental comaprisions Links are given below.
 We have demonstrated DPP using Flask, incorporating user, base station, and central server interactions. For connectivity, we have utilized Wi-Fi, enhancing the practicality and relevance of the caching algorithm. When a user demands a file that is already present in the local cache of the base station, it results in a cache hit. If the requested file is not present in the local cache of the base station, it leads to a cache miss, then the base station sends a request to the central server to fetch the missing file.
+- ***Dataset and Neural Network Description for DPP-Cache***: The dataset used is “311 Service
+Requests Pitt” from Kaggle.2. It consists of public service requests such as “potholes, abandoned
+vehicles, building maintenance, etc.,” their description, and the time-stamps of the requests from
+Feb. 2017 to Nov. 2018, which is divided into 1000 time slots. To use this data for the caching
+scenario, we replace the type of service as a proxy for the files. There are a total of 423 unique
+files (services) and around 6 million requests. This leads to an average of 660 requests per slot.
+At the beginning of every slot, a neural network is updated based on the demands from the
+past 5 time slots and is subsequently used to predict the next set of demands using the past 3
+slots demand as input. The neural network consists of three LSTM layers and one dense layer
+(number of outputs equals 423). This amounts to a total of 2 million neural coefficients
 
 - ***Kaggle***: https://www.kaggle.com/datasets/yoghurtpatil/311-service-requests-pitt
 - ***LeadCache***: https://github.com/AbhishekMITIITM/LeadCache-NeurIPS21
 - ***DPP previous work by Shashank P.*** : https://github.com/shashankp28/DPP-Cache
 
 ## About DPP
-**Notation**:
+***Notation***:
 - T: Total time frame, assumed to be slotted.
 - 𝓕: Set of files that can be requested, represented as {1,2,...,F}.
 - Θₜ: Vector representing the sum of demands for each file at time slot t.
