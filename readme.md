@@ -26,6 +26,9 @@ Zₜ: Array of 0s and 1s denoting whether a file is in the cache in time slot t.
 
 ![Collaboration (2)](https://github.com/SuyashGaurav/DPP-Cache-main/assets/102952185/1d0f17ab-985f-46e8-abcd-d59825f5e833)
 
+## Pictorial Representation
+![WhatsApp Image 2023-12-30 at 10 17 59 PM](https://github.com/SuyashGaurav/DPP-Cache-Main-Flask-Implementation/assets/102952185/b470f7b0-3a61-4496-aaa5-66766e034323)
+
 
   ## Results
    **Observation**: 
@@ -59,13 +62,7 @@ COST_CONSTRAINT = 1                       # Fetching cost Constraint
 TIME_LIMIT = inf                          # Maximum requests per slot
 PATH_TO_INPUT = Datasets/311_dataset.txt  # Path to request dataset
 ```
-
 ***Note:*** **Keep FUTURE key to be always 1**
-
-3. Run the following command
-```
-python run.py
-```
 
 ## Extension
 **Multiple Base Stations**
