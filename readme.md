@@ -23,6 +23,8 @@ slots demand as input. The neural network consists of three LSTM layers and one 
 - ***LeadCache***: https://github.com/AbhishekMITIITM/LeadCache-NeurIPS21
 - ***DPP previous work by Shashank P.*** : https://github.com/shashankp28/DPP-Cache
 
+<img width="877" alt="image" src="https://github.com/SuyashGaurav/DPP-Cache-Main-Flask-Implementation/assets/102952185/aa130531-cf5b-4cdc-b113-a16d4d41d97f">
+
 ## About DPP
 ***Notation***:
 - T: Total time frame, assumed to be slotted.
@@ -41,7 +43,7 @@ slots demand as input. The neural network consists of three LSTM layers and one 
 ![WhatsApp Image 2023-12-30 at 10 17 59 PM](https://github.com/SuyashGaurav/DPP-Cache-Main-Flask-Implementation/assets/102952185/b470f7b0-3a61-4496-aaa5-66766e034323)
 
 
-  ## Results
+  ## Performance Evaluation of DPP-Cache for single base station
    **Observation**: 
  By changing the time slot from 200 to 1000, which also changed the requests per time slot from 3300 to 660, we see the importance of adapting the DPP algorithm in real-time. This shows that relying on old data may not accurately predict future trends in fast-changing situations. Giving more importance to recent data helps us use our resources efficiently and makes our system more resilient.
 
