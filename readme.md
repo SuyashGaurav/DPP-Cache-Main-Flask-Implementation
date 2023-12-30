@@ -13,14 +13,14 @@ This reposiroty contains datasets and files relevant to **DPP-caching algorithm*
 - ***DPP previous work by Shashank P.*** : https://github.com/shashankp28/DPP-Cache
 
 ## About DPP
-Notation:
-T: Total time frame, assumed to be slotted.
-𝓕: Set of files that can be requested, represented as {1,2,...,F}.
-Θₜ: Vector representing the sum of demands for each file at time slot t.
-C: Total cache capacity.
-ν: Cost constraint.
-V: Scaling factor balancing the trade-off between fetching cost and cache hit.
-Zₜ: Array of 0s and 1s denoting whether a file is in the cache in time slot t.
+**Notation**:
+- T: Total time frame, assumed to be slotted.
+- 𝓕: Set of files that can be requested, represented as {1,2,...,F}.
+- Θₜ: Vector representing the sum of demands for each file at time slot t.
+- C: Total cache capacity.
+- ν: Cost constraint.
+- V: Scaling factor balancing the trade-off between fetching cost and cache hit.
+- Zₜ: Array of 0s and 1s denoting whether a file is in the cache in time slot t.
 
 ![Collaboration (1)](https://github.com/SuyashGaurav/DPP-Cache-main/assets/102952185/2baf940e-70ac-478b-a9fd-b73d635ec1a6)
 
