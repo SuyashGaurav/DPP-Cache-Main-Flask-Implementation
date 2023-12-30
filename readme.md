@@ -7,6 +7,7 @@ Caching involves storing frequently accessed data at base station to reduce the 
 The primary goal is to maximize the time-averaged cache hit rate. A cache hit occurs when the requested file is already present in the local cache. This is subject to constraints, specifically fetching cost and a fixed cache size.
 
 This reposiroty contains datasets and files relevant to **DPP-caching algorithm**. We have also made use of GitHub Repository of **LeadCache** Algorithm for experimental comaprisions Links are given below.
+We have demonstrated DPP using Flask, incorporating user, base station, and central server interactions. For connectivity, we have utilized Wi-Fi, enhancing the practicality and relevance of the caching algorithm. When a user demands a file that is already present in the local cache of the base station, it results in a cache hit. If the requested file is not present in the local cache of the base station, it leads to a cache miss, then the base station sends a request to the central server to fetch the missing file.
 
 - ***Kaggle***: https://www.kaggle.com/datasets/yoghurtpatil/311-service-requests-pitt
 - ***LeadCache***: https://github.com/AbhishekMITIITM/LeadCache-NeurIPS21
