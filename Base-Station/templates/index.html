@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{%block head %}
+<title>Single Server</title>
+{% endblock %}
+
+{%block body %}
+
+<h1 style="text-align: center; margin-top: 30px; font-family: fantasy;">DPP File Cache</h1>
+
+{% if tasks|length < 1 %}
+<div class="jumbotron">
+<h4 class="text-center display-5">You have not fetched any file, fetch one below!</h4>
+</div>
+{% else %}
+<div class="container-sm shadow-lg p-5 mb-3 rounded" style="background-color:white;">
+    <div class="row">
+      <div class="col col-sm-3 border border-1"><span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:xx-large;">File_ID</span></div>
+      <div class="col col-sm-3 border border-1"><span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:xx-large;">Added</span></div>
+      <div class="col col-sm-3 border border-1"><span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:xx-large;">Status</span></div>
+      <div class="col col-sm-3 border border-1"><span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:xx-large;">Actions</span></div>
+      <hr>
+    {% for task in tasks %}
+
+        <div class="col col-sm-3" style="font-family:cursive">{{task.content}}</div>
+        <div class="col col-sm-3 font-monospace">{{task.date_created.strftime("%Y-%m-%d %H:%M:%S")}}</div>
+        <div class="col col-sm-3" style="font-family:cursive">{{task.status}}</div>
+        <div class="col col-sm-3 p-1">
+            <!-- <a class="btn btn-outline-danger" href="/delete/{{task.id}}" role="button">Delete</a> -->
+            <a class="btn btn-outline-info" href="/download/{{task.content}}">Download</a>
+        </div>
+        <hr>
+    {% endfor %}
+    </div>
+</div>
+{% endif %}
+<br>
+
+<div class="content">
+    <form action="/" method="POST">
+        <div class="form-group input-group">
+            <input type="number" name="content" id="content" class="form-control d-inline-block" placeholder="Enter File ID" min="0" max="422" required>
+            <button type="submit" class="btn btn-outline-success d-inline-block">Fetch File</button>
+        </div>
+    </form>
+</div> 
+<br>
+{% if tasks|length >= 1 %}
+<h4 style="text-align: center; margin-top: 30px; font-family:'Courier New', Courier, monospace">Last fetched value: {{tasks[-1].file_content}}</h4>
+{% endif %}
+<br>
+<div class="content">
+    <form action="/add_Data" method="POST">
+        <div class="form-group d-flex align-items-center">
+            <input type="number" name="num" id="num" class="form-control" placeholder="Enter number of Timeslot" min="0" max="999">
+            <button type="submit" class="btn btn-outline-success">Add_data</button>
+        </div>
+    </form>
+</div>
+<br>
+<div class="row" style="margin-top: 50px;">
+    <div id="clockContainer">
+        <img src="{{ url_for('serve_image', filename='cache_hit.jpg') }}" alt="Image 1">
+    </div>
+    <div id="clockContainer">
+        <img src="{{ url_for('serve_image', filename='cache_replace_rate.jpg') }}" alt="Image 1">
+    </div>
+</div>
+  <br>
+<div id="clockContainer">
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
+</div>
+
+{% endblock %}
