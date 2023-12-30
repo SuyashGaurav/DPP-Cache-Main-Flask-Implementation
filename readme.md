@@ -1,7 +1,7 @@
 # DPP-Cache![Research Paper Presentation](https://github.com/SuyashGaurav/DPP-Cache-main/assets/102952185/cffa3298-1b39-492c-84be-d3c5e0acab86)
 
 ## Introduction
-This research project was initially initiated by (Shashank P.)[https://github.com/shashankp28/DPP-Cache] Later, we (Suyash & Himanshu) Collaborated with Prof. Bharath B N. to optimize the Drift-Plus-Penalty (DPP) caching algorithm, effectively outperforming established caching methods such as LRU, LFU, and FTPL.
+This research project was initially initiated by [Shashank P.](https://github.com/shashankp28/DPP-Cache) Later, we (Suyash & Himanshu) Collaborated with Prof. Bharath B N. to optimize the Drift-Plus-Penalty (DPP) caching algorithm, effectively outperforming established caching methods such as LRU, LFU, and FTPL.
 
 Caching involves storing frequently accessed data at base station to reduce the need to fetch it from a central server whenever requested. 
 The primary goal is to maximize the time-averaged cache hit rate. A cache hit occurs when the requested file is already present in the local cache. This is subject to constraints, specifically fetching cost and a fixed cache size.
