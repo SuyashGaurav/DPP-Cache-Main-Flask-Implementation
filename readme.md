@@ -1,7 +1,7 @@
 # DPP-Cache![Research Paper Presentation](https://github.com/SuyashGaurav/DPP-Cache-main/assets/102952185/cffa3298-1b39-492c-84be-d3c5e0acab86)
 
 ## Introduction
-This research project was initially initiated by [Shashank P.](https://github.com/shashankp28/DPP-Cache) Later, we (Suyash & Himanshu) Collaborated with Prof. Bharath B N. to optimize the [Drift-Plus-Penalty (DPP) caching algorithm](https://github.com/SuyashGaurav/DPP-Cache-Main-Flask-Implementation/tree/main/Base-Station/DPP), effectively outperforming established caching methods such as LRU, LFU, and FTPL.
+This research project was initially initiated by [Shashank P.](https://github.com/shashankp28/DPP-Cache) Later, we (Suyash & Himanshu) Collaborated with [Prof. Bharath B N.](https://bharathbettagere.github.io/mywebpage/) to optimize the [Drift-Plus-Penalty (DPP) caching algorithm](https://github.com/SuyashGaurav/DPP-Cache-Main-Flask-Implementation/tree/main/Base-Station/DPP), effectively outperforming established caching methods such as LRU, LFU, and FTPL.
 
 ### <img src="https://i.pinimg.com/originals/3a/36/20/3a36206f35352b4230d5fc9f17fcea92.png" width="20">  Youtube Video Link: https://www.youtube.com/watch?v=uIn7cSWpbto
 
