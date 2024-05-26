@@ -46,7 +46,7 @@ slots demand as input. The neural network consists of three LSTM layers and one 
 
   ## Performance Evaluation of DPP-Cache for single base station
    **Observation**: 
- By changing the time slot from 200 to 1000, which also changed the requests per time slot from 3300 to 660, we see the importance of adapting the DPP algorithm in real time. This shows that relying on old data may not accurately predict future trends in fast-changing situations. Giving more importance to recent data helps us use our resources efficiently and makes our system more resilient.
+ By changing the time slot from 200 to 1000, which also changed the requests per time slot from 3300 to 660, we see the importance of adapting the DPP algorithm in real time. This shows that relying on old data may not accurately predict future trends in fast-changing situations. Giving more importance to recent data helps us use our resources efficiently and makes our system more resilient, thus increasing the efficiency of model by 10%.
 
  ### Previous result:
 ![Collaboration](https://github.com/SuyashGaurav/DPP-Cache-main/assets/102952185/f251e2e2-8c09-45f5-9da2-2261bdcc79b1)
